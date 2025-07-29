@@ -60,23 +60,33 @@ closing price, SMA, RSI).
 (iii)Use Mean Squared Error (MSE) as the loss function and Adam optimizer for training.
 
 5.Model Training and Validation:
-(i)Train the LSTM model on the training dataset for a specifed number of epochs.(ii)Validate performance on the test set, evaluating metrics such as Root Mean Squared Error 
+(i)Train the LSTM model on the training dataset for a specifed number of epochs.
+
+(ii)Validate performance on the test set, evaluating metrics such as Root Mean Squared Error 
 (RMSE).
+
 (iii)Save model weights for future use.
 
 6.Prediction and Visualization:
+
 (i)Generate predictions on the test set and inverse-transform normalized data to obtain actual price 
 values.
+
 (ii)Plot actual vs. predicted prices using Matplotlib, including technical indicators for context.
 
 7.Optional Dashboard Deployment:
+
 (i)Develop a Streamlit dashboard to allow users to select stock tickers, view predictions, and 
 explore historical trends interactively.
+
 (ii)Deploy the dashboard via Streamlit Cloud or a similar platform, providing a shareable link.
 
 8.Deliverables Preparation:
+
 (i)Document the workfow in a Jupyter notebook, including code, comments, and visualizations.
+
 (ii)Export model weights and generate graphs for predictions and indicators.
+
 (iii)Provide a link to the Streamlit dashboard (if implemented).
 
 CONCLUSION:
