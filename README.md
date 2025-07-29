@@ -19,7 +19,7 @@ forecasting, achieving reliable predictions while highlighting challenges such a
 
 TOOLS :
 
-1.Python: Core programming language for data processing and model development.
+1.Python: Core programming language for data processing and model development.     
 2.yfnance: API to fetch historical stock price data from Yahoo Finance.
 3.Pandas: Data manipulation and preprocessing, including handling time-series data.
 4.Keras: Framework for building and training the LSTM model.
