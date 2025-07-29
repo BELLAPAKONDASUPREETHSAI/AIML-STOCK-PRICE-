@@ -20,13 +20,21 @@ forecasting, achieving reliable predictions while highlighting challenges such a
 TOOLS :
 
 1.Python: Core programming language for data processing and model development.     
+
 2.yfnance: API to fetch historical stock price data from Yahoo Finance.
+
 3.Pandas: Data manipulation and preprocessing, including handling time-series data.
+
 4.Keras: Framework for building and training the LSTM model.
+
 5.Matplotlib: Visualization of actual vs. predicted stock prices and technical indicators.
+
 6.NumPy: Numerical operations for data normalization and array handling.
+
 7.Scikit-learn: Data preprocessing, including scaling and splitting datasets.
+
 8.Streamlit: Optional tool for deploying an interactive dashboard.
+
 9.Jupyter Notebook: Environment for code development, testing, and documentation.
 
 STEPS INVOLVED IN BUILDING THE PROJECT:
@@ -34,31 +42,38 @@ STEPS INVOLVED IN BUILDING THE PROJECT:
 1.Data Acquisition:
 Use the yfnance library to fetch historical stock price data (e.g., daily closing prices) for a chosen 
 stock ticker.
+
 2.Data processing:
 Store data in a Pandas DataFrame for further processing.
+
 3.Compute technical indicators: Simple Moving Average (SMA) and Relative Strength Index (RSI).
 (i)Normalize price data and indicators using Min-Max scaling to ensure consistent input ranges for 
 the LSTM model.
 (ii)Create sequences of historical data (e.g., 60-day windows) as input features for time-series 
 prediction.
 (iii)Split data into training (e.g., 80%) and testing (e.g., 20%) sets.
+
 4.Model Development:
 (i)Build an LSTM model using Keras with multiple layers to capture temporal dependencies.
 (ii)Confgure the model with appropriate input shapes based on sequence length and features (e.g., 
 closing price, SMA, RSI).
 (iii)Use Mean Squared Error (MSE) as the loss function and Adam optimizer for training.
+
 5.Model Training and Validation:
 (i)Train the LSTM model on the training dataset for a specifed number of epochs.(ii)Validate performance on the test set, evaluating metrics such as Root Mean Squared Error 
 (RMSE).
 (iii)Save model weights for future use.
+
 6.Prediction and Visualization:
 (i)Generate predictions on the test set and inverse-transform normalized data to obtain actual price 
 values.
 (ii)Plot actual vs. predicted prices using Matplotlib, including technical indicators for context.
+
 7.Optional Dashboard Deployment:
 (i)Develop a Streamlit dashboard to allow users to select stock tickers, view predictions, and 
 explore historical trends interactively.
 (ii)Deploy the dashboard via Streamlit Cloud or a similar platform, providing a shareable link.
+
 8.Deliverables Preparation:
 (i)Document the workfow in a Jupyter notebook, including code, comments, and visualizations.
 (ii)Export model weights and generate graphs for predictions and indicators.
